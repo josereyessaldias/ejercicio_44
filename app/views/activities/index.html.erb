@@ -1,0 +1,9 @@
+
+<img src="<%= @activity.photo %>" ><br>
+<%= @activity.name %><br>
+<br>
+<% if can?(:edit, @activity) %>
+	<%= link_to 'Editar actividad', edit_activity_path(@activity.id), :class => 'btn btn-info' %>
+<% end %>
+
+
