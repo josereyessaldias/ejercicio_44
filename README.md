@@ -1,8 +1,8 @@
 # README
 
-Habilité fotos en usuario, actividad y actividades de usuario.
+Arreglé el diseño y la funcionalidad general del sitio. Implementé las vistas de actividades de usuarios en el Home.
 
-Heroku: https://ejercicio43.herokuapp.com
+Heroku: https://ejercicio44.herokuapp.com
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
