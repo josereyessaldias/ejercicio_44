@@ -9,7 +9,10 @@ class PagesController < ApplicationController
     end
     @promotes = PromoteActivity.where(payed: true)
 
+
     @sucesos = []
+      if user_signed_in?
+
     @contacts.each do |c|
       User.find(c.followed_id).user_activity.each do |suc|
         @sucesos << suc
@@ -20,6 +23,7 @@ class PagesController < ApplicationController
     end
     @sucesos.sort_by {|event| event.created_at}
     @sucesos.reverse!
+  end
 
   end  
 
